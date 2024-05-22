@@ -1,0 +1,33 @@
+.loader{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px dashed teal;
+    animation: rotate 3s infinite linear;
+    margin-top: 50px;
+}
+.loaderBack{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 3px dashed orange;
+    animation: rotateBack 1s infinite linear;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg) scale(1);
+    }
+    100%{
+        transform: rotate(360deg) scale(1.4);
+    }
+}
+@keyframes rotateBack {
+    0%{
+        transform: rotate(360deg) scale(1);
+    }
+    100%{
+        transform: rotate(0deg) scale(1.4);
+    }
+}
+
